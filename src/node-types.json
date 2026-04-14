@@ -1368,7 +1368,7 @@
       },
       "parameters": {
         "multiple": true,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": ",",
@@ -1390,6 +1390,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "parameter",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -2643,7 +2653,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "elif",
@@ -2715,7 +2726,8 @@
   },
   {
     "type": "line_continuation",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "map",
